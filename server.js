@@ -18,7 +18,7 @@ app.post('/login', (req, res) => {
     const { username, password } = req.body;
 
     // Simple autenticación ficticia
-    if (username === 'admin' && password === '1234') {
+    if (username === process.env.ADMIN_USER && password === process.env.ADMIN_PASS) {
         const token = jwt.sign({ username }, process.env.JWT_SECRET, { expiresIn: '1h' });
         return res.json({ token });
     }
