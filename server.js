@@ -28,5 +28,5 @@ app.post('/login', (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Servidor inciado en http://localhost:${PORT}`);
+    console.log(`Servidor iniciado en http://localhost:${PORT}`);
 });

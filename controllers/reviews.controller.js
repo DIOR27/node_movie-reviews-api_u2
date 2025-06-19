@@ -24,7 +24,8 @@ function update(req, res) {
 function remove(req, res) {
     const success = service.remove(req.params.id);
     if (!success) return res.status(404).json({ error: 'No encontrada' });
-    res.status(204).end();
+
+    res.status(200).json({ message: 'Reseña eliminada exitosamente' });
 }
 
 module.exports = { getAll, getById, create, update, remove };
