@@ -54,6 +54,8 @@ Crea un archivo `.env` en la raíz con:
 ```env
 PORT=3000
 JWT_SECRET=Uem1234!
+ADMIN_USER=admin
+ADMIN_PASS=1234
 ```
 
 ---
