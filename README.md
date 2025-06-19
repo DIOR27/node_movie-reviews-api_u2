@@ -11,7 +11,6 @@ API REST construida con **Node.js** y **Express** para gestionar reseñas de pel
 - JSON Web Token (JWT)
 - dotenv
 - uuid
-- nodemon
 
 ---
 
