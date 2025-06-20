@@ -73,10 +73,12 @@ npm start       # Ejecuta el servidor en producción
 Para acceder a las rutas protegidas (`POST`, `PUT`, `DELETE`) necesitas un token JWT válido. Obténlo con:
 
 ### POST `/login`
-
-```bash
-POST http://localhost:3000/login \
-BODY '{"username":"admin","password":"1234"}'
+**Body requerido:**
+```json
+{
+  "username":"admin",
+  "password":"1234"
+}'
 ```
 
 Respuesta:
@@ -141,6 +143,6 @@ Los datos se almacenan en el archivo local: `data/reviews.json`.
 
 ## ✍️ Autor
 
-- **Desarrollado por:** [Tu Nombre]
+- **Desarrollado por:** Diego Orellana
 - **Curso:** Desarrollo Avanzado de Backend y APIs
 - **Universidad Europea**
